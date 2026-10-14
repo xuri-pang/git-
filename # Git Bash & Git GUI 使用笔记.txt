@@ -1,0 +1,56 @@
+# Git Bash & Git GUI 使用笔记
+	> 两者操作同一个本地仓库：桌面`git`文件夹，二选一使用，无需同	   时打开
+	> Git Bash：命令行终端；Git GUI：图形可视化界面
+
+一、Git Bash（命令行）
+### 作用
+	1. 通过命令执行git全套操作：初始化仓库、查看改动、提交、推送代	    码到GitHub
+	2. 行业标准方式，简历项目、面试重点考察，适合正式项目开发
+	3. 支持Linux风格命令，可切换目录、查看文件
+
+      使用流程（上传文件至GitHub）
+	1. 打开Git Bash
+	2. 进入本地仓库目录
+	   ```bash
+	   cd /c/Users/Lenovo/Desktop/git
+	3.查看文件变动，红色代表新增 / 修改未暂存
+	   git status
+	4.将所有改动文件加入暂存区
+	   git add .
+	5.本地提交，引号内自定义本次更新说明
+	   git commit -m "新增考研知识点笔记"
+	6.推送到 GitHub 远程仓库，网页仓库同步更新
+	   git push
+      常用命令
+	- git status：查看仓库文件状态
+	- git add .：添加全部文件到暂存区
+	- git commit -m "备注"：本地保存版本
+	- git push：上传文件到 GitHub 网页仓库
+
+
+二、Git GUI（图形界面）
+
+### 作用
+
+	1. 可视化查看新增、修改的文件，鼠标点击完成提交推送，不用记忆 	    命令
+	2. 适合新手直观理解 git 工作流程，快速查看代码差异
+
+使用流程（上传文件至 GitHub
+	1. 打开 Git GUI 软件
+	2. 选择 **Open Existing Repository（打开已有仓库）**
+   	- 等价 Bash 命令：`cd 仓库路径`
+   	- 在弹窗选中桌面`git`文件夹，确认打开
+	3. 左侧窗口：红色 = 未暂存的新增 / 修改文件
+	4. 选中待上传文件 → 点击【Stage】暂存
+   	- 等价 Bash：`git add .`
+	5. 底部文本框填写提交备注，点击【Commit】保存本地版本
+   	- 等价 Bash：`git commit -m "备注"`
+	6. 菜单【Remote】→【Push】推送到 GitHub
+   	- 等价 Bash：`git push`
+	7. 推送完成，刷新 GitHub 网页查看文件
+
+### 首页三个选项翻译
+
+1. Create New Repository：新建仓库（新项目初始化使用）
+2. Clone Existing Repository：克隆仓库（下载 GitHub 远程项目到本地）
+3. Open Existing Repository：打开已有本地仓库（当前项目使用）
