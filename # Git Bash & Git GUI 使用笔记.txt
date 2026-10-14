@@ -1,3 +1,7 @@
+简要概括--自己理解
+git bash:用来管理自己的文件,git commit用来将文件定版本(断网也可以操作,关电脑也不会消失),进行下一步git push用来将文件传入远程仓库 		 github
+具体操作步骤:git cd /c/USers/Lenovo/Desktop/git\ hub/git--->git status--->git add .--->git commit--->git push
+
 # Git Bash & Git GUI 使用笔记
 	> 两者操作同一个本地仓库：桌面`git`文件夹，二选一使用，无需同	   时打开
 	> Git Bash：命令行终端；Git GUI：图形可视化界面
